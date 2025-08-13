@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  margin: 0;
+  display: flex;
+}
+
+.main {
+  flex-grow: 1;
+  margin: 0% 15%;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  background-color: #1b4079;
+  min-height: 60%;
+  flex-grow: 1;
+  display: flex;
+}
+.work {
+  background-color: #4d7c8a;
+  min-height: 110%;
+  flex-grow: 1;
+}
+.contact {
+  background-color: #7f9c96;
+  min-height: 60%;
+  flex-grow: 1;
+}
+
+.picture {
+  align-self: center;
+  margin-left: 5%;
+}
+.about {
+  background-color: white;
+  max-height: 50%;
+  align-self: center;
+  flex-grow: 1;
+  margin-right: 5%;
+}
