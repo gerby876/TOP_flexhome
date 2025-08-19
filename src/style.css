@@ -2,42 +2,91 @@ body {
   background-color: black;
   margin: 0;
   display: flex;
+  justify-content: center;
 }
 
 .main {
   flex-grow: 1;
-  margin: 0% 15%;
   background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 1475px;
 }
 
 .intro {
   background-color: #1b4079;
-  min-height: 60%;
+  min-height: 500px;
   flex-grow: 1;
   display: flex;
 }
+
 .work {
   background-color: #4d7c8a;
-  min-height: 110%;
+  min-height: 1000px;
   flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 .contact {
   background-color: #7f9c96;
-  min-height: 60%;
+  min-height: 500px;
   flex-grow: 1;
+  display: flex;
 }
 
 .picture {
   align-self: center;
-  margin-left: 5%;
+  margin-left: 64px;
 }
+
 .about {
   background-color: white;
-  max-height: 50%;
+  min-height: 300px;
   align-self: center;
   flex-grow: 1;
-  margin-right: 5%;
+  margin-right: 64px;
+}
+
+.about > * {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.project {
+  background-color: white;
+  min-height: 400px;
+  margin: 48px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectimg {
+  background-color: #1b4079;
+  flex-grow: 1;
+  min-height: 264px;
+}
+
+.projectdesc {
+  flex-grow: 1;
+  min-height: 136px;
+}
+
+.contactinfo {
+  /* background-color: white; */
+  min-height: 400px;
+  flex-grow: 1;
+  margin: 75px;
+  font-size: 1.5em;
+}
+
+.contactinfo > * {
+  margin: 16px;
+}
+
+.contactimg {
+  align-self: center;
+  justify-self: center;
+  margin-right: 75px;
 }
