@@ -10,10 +10,15 @@
       <div class="intro">
         <div class="picture">
           <img
-            srcset="./images/pexels-olly-840996.jpg 6100w"
-            sizes="600px"
+            class="mypicture"
+            srcset="./images/pexels-olly-840996.jpg 6100w, 
+            ./images/pexels-olly-840996.jpg 6100w"
+            sizes="(min-width: 1250px) 600px,
+            (max-width: 1249px) 300px"
             alt="A picture"
           />
+            <div class="myname">Milo Bean</div>
+          </img>
         </div>
         <div class="about">
           <h1>About me</h1>
@@ -26,7 +31,6 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </div>
-          <div></div>
         </div>
       </div>
 

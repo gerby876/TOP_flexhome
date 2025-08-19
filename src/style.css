@@ -39,6 +39,19 @@ body {
 .picture {
   align-self: center;
   margin-left: 64px;
+  position: relative;
+}
+
+.mypicture {
+  box-shadow: 5px 5px 15px;
+}
+.myname {
+  position: absolute;
+  bottom: 0px;
+  right: 50%;
+  font-size: 64px;
+  transform: translate(50%);
+  color: white;
 }
 
 .about {
@@ -47,6 +60,7 @@ body {
   align-self: center;
   flex-grow: 1;
   margin-right: 64px;
+  box-shadow: 5px 5px 15px;
 }
 
 .about > * {
@@ -60,6 +74,7 @@ body {
   margin: 48px;
   display: flex;
   flex-direction: column;
+  box-shadow: 3px 3px 10px;
 }
 
 .projectimg {
@@ -89,4 +104,77 @@ body {
   align-self: center;
   justify-self: center;
   margin-right: 75px;
+}
+
+@media (max-width: 1249px) {
+  .main {
+    flex-grow: 1;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+  }
+
+  .intro {
+    background-color: #1b4079;
+    min-height: 500px;
+    flex-grow: 1;
+    display: inline;
+  }
+
+  .picture {
+    float: left;
+    margin-left: 32px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: 25px;
+  }
+
+  .mypicture {
+    box-shadow: 5px 5px 15px;
+  }
+
+  .myname {
+    position: absolute;
+    top: 0px;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: translate(130%);
+    color: black;
+    text-shadow: 2px 5px 10px white;
+  }
+
+  .about {
+    background-color: white;
+    min-height: 250px;
+    margin-right: 64px;
+    margin-left: 64px;
+    margin-top: 120px;
+    box-shadow: 5px 5px 15px;
+  }
+
+  .about > * {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .about > div {
+    font-size: 20px;
+  }
+
+  .work {
+    background-color: #4d7c8a;
+    min-height: 1000px;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact {
+    background-color: #7f9c96;
+    min-height: 500px;
+    flex-grow: 1;
+    display: flex;
+  }
 }
