@@ -25,6 +25,15 @@ body {
   background-color: #4d7c8a;
   min-height: 1000px;
   flex-grow: 1;
+}
+
+.work > h2 {
+  font-size: 48px;
+  margin-left: 48px;
+  margin-bottom: -40px;
+}
+
+.work > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -89,7 +98,6 @@ body {
 }
 
 .contactinfo {
-  /* background-color: white; */
   min-height: 400px;
   flex-grow: 1;
   margin: 75px;
@@ -167,8 +175,38 @@ body {
     background-color: #4d7c8a;
     min-height: 1000px;
     flex-grow: 1;
+  }
+
+  .work > h2 {
+    font-size: 48px;
+    margin-left: 16px;
+    margin-bottom: -28px;
+    margin-top: 16px;
+  }
+
+  .work > div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project {
+    background-color: white;
+    min-height: 400px;
+    margin: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px;
+  }
+
+  .projectimg {
+    background-color: #1b4079;
+    flex-grow: 1;
+    min-height: 264px;
+  }
+
+  .projectdesc {
+    flex-grow: 1;
+    min-height: 136px;
   }
 
   .contact {
@@ -177,4 +215,26 @@ body {
     flex-grow: 1;
     display: flex;
   }
+
+  .contactinfo {
+    min-height: 300px;
+    flex-grow: 1;
+    margin: 16px;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  .contactinfo > * {
+    margin: 16px;
+  }
+
+  .contactimg {
+    align-self: center;
+    justify-self: center;
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 599px) {
+  /* design min size is 360px */
 }
