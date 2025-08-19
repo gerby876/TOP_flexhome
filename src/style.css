@@ -237,4 +237,122 @@ body {
 
 @media (max-width: 599px) {
   /* design min size is 360px */
+  .main {
+    flex-grow: 1;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+  }
+
+  .intro {
+    background-color: #1b4079;
+    min-height: 500px;
+    flex-grow: 1;
+    display: inline;
+  }
+
+  .picture {
+    float: left;
+    margin-left: 32px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-top: 25px;
+  }
+
+  .mypicture {
+    box-shadow: 5px 5px 15px;
+  }
+
+  .myname {
+    position: absolute;
+    top: 0px;
+    white-space: nowrap;
+    font-size: 64px;
+    transform: translate(130%);
+    color: black;
+    text-shadow: 2px 5px 10px white;
+  }
+
+  .about {
+    background-color: white;
+    min-height: 250px;
+    margin-right: 64px;
+    margin-left: 64px;
+    margin-top: 120px;
+    box-shadow: 5px 5px 15px;
+  }
+
+  .about > * {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .about > div {
+    font-size: 20px;
+  }
+
+  .work {
+    background-color: #4d7c8a;
+    min-height: 1000px;
+    flex-grow: 1;
+  }
+
+  .work > h2 {
+    font-size: 48px;
+    margin-left: 16px;
+    margin-bottom: -28px;
+    margin-top: 16px;
+  }
+
+  .work > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .project {
+    background-color: white;
+    min-height: 400px;
+    margin: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px;
+  }
+
+  .projectimg {
+    background-color: #1b4079;
+    flex-grow: 1;
+    min-height: 264px;
+  }
+
+  .projectdesc {
+    flex-grow: 1;
+    min-height: 136px;
+  }
+
+  .contact {
+    background-color: #7f9c96;
+    min-height: 500px;
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .contactinfo {
+    min-height: 300px;
+    flex-grow: 1;
+    margin: 16px;
+    font-size: 16px;
+    align-self: center;
+  }
+
+  .contactinfo > * {
+    margin: 16px;
+  }
+
+  .contactimg {
+    align-self: center;
+    justify-self: center;
+    margin-right: 32px;
+  }
 }
